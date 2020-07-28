@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.wrapper{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: blue;
+}
+.btn{
+width: 400px;
+}
+.btn button{
+    width: 100%;
+    display: block;
+    padding: 30px 0;
+    border: none;
+    background-color: white;
+    color: blue;
+    border-radius: 100px;
+    transition: 0.5s all ;
+    font-size: 40px;
+    font-weight: bold;
+}
+.btn button:hover{
+    transform: translateY(-8px);
+    cursor: pointer;
+}
+.btn button:focus, .nextbtn:focus{
+    outline: none;
+}
+.btn button:active{
+font-size: 38px;
+
+}
+.quiz{
+    width: 600px;
+    height: 500px;
+    display: grid;
+    grid-template-rows: 60px auto;
+
+}
+.header{
+    background-color: wheat;
+    box-shadow: 0px 2px 5px 1px rgb(0, 0, 0, 0.4);
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+}
+.body{
+    background-color: white;
+padding: 30px;
+}
+.logo{
+    font-size: 20px;
+/* display: flex; */
+align-items: center;
+/* padding-left: 30px; */
+margin: auto auto;
+}
+/* .timer{
+    display: flex;
+    align-items: center;
+    background-color: blue;
+    padding: 0 30px;
+    color: white;
+} */
+.list{
+    list-style: none;
+    margin: 30px 0;
+}
+.option{
+    background-color: wheat;
+    width: 50%;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border: 2px solid transparent;
+border-radius: 100px;
+}
+.option:hover{
+    border: 2px solid blue;
+    cursor: pointer;
+    color: blue;
+}
+.nextbtn{
+    background-color: blue;
+    color: white;
+    padding: 15px 35px;
+border-radius: 27px;
+border: none;
+
+}
+.nextbtn:hover{
+    background-color: white;
+    color: blue;
+   box-shadow: 0px 0px 10px 1px rgb(0, 0, 0, 0.4); 
+   cursor: pointer;
+}
+.active{
+    background-color: blue;
+    color: white !important;
+}
+.award{
+    font-size: 250px;
+    color: goldenrod;
+    padding-bottom: 20px;
+}
+.userPoints, .userTime{
+color: white;
+text-align: center;
+margin-top: 15px;
+font-size: 30px;
+}
+@media screen and (max-width: 400px){
+    .btn{
+        width: 200px;
+        }
+        .btn button{
+            width: 100%;
+           
+            padding: 20px 0;
+          
+            font-size: 30px;
+            
+        }
+        .btn button:active{
+            font-size: 28px;
+            
+            }
+            .award{
+                font-size: 150px;
+                margin-left: 20px;
+            }
+            .userPoints,{
+               
+                font-size: 20px;
+                }
+}
